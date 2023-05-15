@@ -1,0 +1,27 @@
+<section class="portfolio">
+    <div class="container">
+        <div class="text-white div-title">
+            <h2 class="text-center text-secondary p-title" id="proyecto">Proyecto</h2><button *ngIf="isLogged" class="button-new" type="button"
+                routerLink="/newproye"><i class="fa fa-plus icon-new"></i></button>
+        </div>
+        <div class="row">
+            <div *ngFor="let Proyecto of proyecto" class="col-md-6 col-lg-4">
+                <div class="btn-right" *ngIf="isLogged">
+                    <button class="button-delete" type="button" (click)="delete(Proyecto.id)"><i
+                            class="fas fa-trash icon-delete"></i></button>
+                    <button class="button-edit" type="button" routerLink="/editproye/{{Proyecto.id}}"><i
+                            class="fas fa-pencil-alt icon-edit"></i></button>
+                </div>
+                <div class="div-card">
+                    <a class="url" [href]="Proyecto.url" target="_blank">
+                        <div class="card" [style.background-color]="Proyecto.color">
+                            <div class="container-proyectos d-flex justify-content-center align-items-center">
+                                <h4 class="text-white text-card">{{Proyecto.nombre}}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

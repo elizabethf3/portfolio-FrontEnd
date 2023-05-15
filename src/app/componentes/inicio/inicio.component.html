@@ -1,0 +1,9 @@
+<header class="text-center text-black masthead header-inicial" id="header" *ngIf="persona">
+    <div class="container">
+        <img class="rounded-circle img-fluid d-block mx-auto mb-5" [src]="persona.img" alt="Foto de perfil">
+        <div *ngIf="isLogged"class="position-absolute translate-middle top-50 start-50"><a routerLink="/editinicio/1" ><i class="fas fa-camera"></i><span>&nbsp;Cambiar Foto</span></a></div>
+        <h1> {{persona.apellido}} {{persona.nombre}}</h1>
+        <h2 class="font-weight-light mb-0">{{persona.descripcion}}</h2>
+    </div>
+
+</header>

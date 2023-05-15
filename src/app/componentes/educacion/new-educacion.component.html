@@ -1,0 +1,47 @@
+<article class="educacion">
+    <section>
+        <div class="overflow-auto container-fluid">
+            <div class="row contenido justify-content-center">
+                <div class="col-8 col-sm-8 col-xxl-9">
+                    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                        <div class="form-group">
+                            <label for="nombre"  class="form-label text-white">Nombre de la Institucion</label>
+                            <input type="text" class="form-control input-nombre" id="nombre" name="nombre" [(ngModel)]="nombre"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion"  class="form-label text-white">Descripcion de sus Estudios</label>
+                            <input type="text" class="form-control input-descipcion" id="descripcion" name="descripcion"
+                                [(ngModel)]="descripcion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inicio"  class="form-label text-white">Fecha de Inicio</label>
+                            <input type="month" class="form-control input-inicio" id="inicio" name="inicio" [(ngModel)]="inicio"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fin"  class="form-label text-white">Fecha de Fin</label>
+                            <input type="month" class="form-control input-fin" id="fin" name="fin" [(ngModel)]="fin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="img"  class="form-label text-white">Imagen de la Educacion</label>
+                            <br>
+                            <input type="file" class="form control" id="img" name="img" [(ngModel)]="img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                        </div>
+                        <div class="form-group">
+                            <div class="imagen">
+                                <img class="imagen-educacion" [src]="imageService.urlImg" alt="Previsualización del logo educacional" width="200px"> 
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-agregar">
+                            Agregar
+                        </button>
+                        <button class="btn btn-light btn-cancelar" (click)="cancel()">
+                            Cancelar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>

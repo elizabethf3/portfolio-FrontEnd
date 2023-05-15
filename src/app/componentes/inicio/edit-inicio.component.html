@@ -1,0 +1,38 @@
+<article class="inicio">
+    <section>
+      <div class="overflow-auto container-fluid">
+        <div class="row contenido justify-content-center">
+          <div class="col-8 col-sm-8 col-xxl-9">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+              <div class="form-group">
+                <label class="form-label text-white" for="apellido">Apellido</label>
+                <input id="apellido" class="form-control input-nombre" type="text" name="apellido" required
+                  [(ngModel)]="persona.apellido" />
+              </div>
+              <div class="form-group"><label class="form-label text-white" for="nombre">Nombre</label><input id="nombre"
+                  class="form-control input-apellido" type="text" name="nombre" required [(ngModel)]="persona.nombre" />
+              </div>
+              <div class="form-group"><label class="form-label text-white input-descripcion"
+                  for="descripcion">Descripcion</label><input id="descripcion" class="form-control" type="text"
+                  name="descripcion" required [(ngModel)]="persona.descripcion" /></div>
+                  <div class="form-group">
+                    <label for="img" class="form-label text-white">Imagen de la Educacion</label>
+                    <br>
+                    <input type="file" class="form-control input-img" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                <div class="form-group">
+                    <div class="imagen">
+                        <img class="imagen-educacion" [src]="imageService.urlImg">
+                    </div>
+                </div>
+              <button class="btn btn-primary btn-actualizar" type="submit">Actualizar</button>
+              <button class="btn btn-light btn-cancelar" (click)="cancel()">
+                Cancelar
+              </button>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>

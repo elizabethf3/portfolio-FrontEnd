@@ -1,0 +1,10 @@
+.header-inicial {
+    background-color: #f4cdfe;
+  }
+
+  .rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }

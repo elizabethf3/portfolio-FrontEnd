@@ -1,0 +1,42 @@
+.skill{
+    background: #E55D87;
+    background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+    background: linear-gradient(to right, #5FC3E4, #E55D87);
+    height: 100vh;
+}
+
+.contenido {
+    height: 86vh;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.input-nombre {
+    width: 50%;
+}
+
+.input-porcentaje,
+.input-color {
+    width: 40%;
+}
+
+.btn-actualizar,
+.btn-cancelar {
+    margin: 10px 10px 10px 0px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-center {
+    width: 150px;
+}
+
+.container-circle{
+    margin-top: 25px;
+}

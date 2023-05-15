@@ -1,0 +1,70 @@
+.button-login:hover {
+  color: #18bc9c;
+}
+
+.nav-inicial {
+  background-color: #10011f;
+}
+
+.header-inicial {
+  background-color: #f4cdfe;
+}
+
+.div-botones {
+  float: right;
+}
+
+.div-imagen {
+  text-align: center;
+}
+
+.section-skill {
+  background-color: #f4cdfe;
+}
+
+.img-educacion {
+  max-width: 27vw;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.div-text {
+  display: inline-block;
+  margin: 0px 0px 0px 20px;
+}
+
+@media (min-width: 992px) {
+  .img-educacion {
+    float: left;
+    max-width: 8vw;
+  }
+}
+
+.img-logo {
+  width: 20vw;
+}
+
+@media (min-width: 768px) {
+  .img-logo {
+    width: 11vw;
+  }
+}
+
+.p-text-skill {
+  text-align: center;
+}
+
+svg {
+  margin: 5px;
+  font-size: 20px;
+}
+
+svg:hover {
+  color: #2c3e50;
+}
+
+.a-link {
+  margin-right: 19px;
+}
+

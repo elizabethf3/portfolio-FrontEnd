@@ -1,0 +1,81 @@
+.div-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 20px;
+}
+
+.p-title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn-right {
+  float: right;
+}
+
+.button-delete,
+.button-edit,
+.button-new {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  /* ancho del icono */
+  height: 20px;
+  /* alto del icono */
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.icon-delete,
+.icon-edit,
+.icon-new {
+  font-size: 20px;
+  /* tamaño de la fuente del icono */
+  color: rgb(0, 163, 255);
+}
+
+.icon-edit:hover,
+.icon-delete:hover,
+.icon-new:hover {
+  color: #0077ff;
+}
+
+.div-imagen {
+  text-align: center;
+}
+
+.imagen-educacion {
+  max-width: 27vw;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.imagen-educacion {
+  width: 80px;
+  /*borrar linea si utilizoc ngx-image-cropper*/
+  max-width: 80px;
+  max-height: 90px;
+  border-radius: 10px;
+}
+
+.div-text {
+  display: inline-block;
+  margin: 0px 0px 0px 20px;
+}
+
+.col-card {
+  padding: 15px 0px 15px 0px;
+}
+
+@media (min-width: 992px) {
+  .imagen-educacion {
+    float: left;
+    max-width: 8vw;
+  }
+}

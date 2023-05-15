@@ -1,0 +1,69 @@
+.section-skill {
+    background-color: #f4cdfe;
+  }
+
+  .p-title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .div-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 20px;
+  }
+  
+  .btn-right {
+    float: right;
+  }
+  
+  .button-delete,
+  .button-edit,
+  .button-new {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    /* ancho del icono */
+    height: 20px;
+    /* alto del icono */
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .icon-delete,
+  .icon-edit,
+  .icon-new {
+    font-size: 20px;
+    /* tamaño de la fuente del icono */
+    color: rgb(0, 163, 255);
+  }
+  
+  .icon-edit:hover,
+  .icon-delete:hover,
+  .icon-new:hover {
+    color: #0077ff;
+  }
+  
+  .contenido3 {
+    height: 63vh;
+  }
+  
+  .div-container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 24px auto;
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .col-skill {
+      margin-right: 51.5px;
+      padding: initial;
+    }
+  }

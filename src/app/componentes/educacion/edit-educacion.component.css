@@ -1,0 +1,40 @@
+.educacion {
+    background: #E55D87;
+    background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+    background: linear-gradient(to right, #5FC3E4, #E55D87);
+    height: 100vh;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.input-nombre,
+.input-img {
+    width: 50%;
+}
+
+.input-inicio,
+.input-fin,
+.input-imagen {
+    width: 70%;
+}
+
+.btn-actualizar,
+.btn-cancelar {
+    margin: 10px 10px 10px 0px;
+}
+
+.imagen-educacion {
+    width: 80px;
+    /*borrar linea si utilizoc ngx-image-cropper*/
+    max-width: 80px;
+    max-height: 90px;
+    border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+    .imagen-educacion {
+        max-height: 80px;
+    }
+}

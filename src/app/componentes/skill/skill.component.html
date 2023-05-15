@@ -1,0 +1,24 @@
+<section class="portfolio section-skill">
+    <div class="container">
+    <div class="div-title">
+        <h2 class="text-center text-secondary p-title" id="skill">Skill</h2><button *ngIf="isLogged" class="button-new" type="button" routerLink="/newskill"><i class="fa fa-plus icon-new"></i></button>
+    </div> 
+        <div class="row">
+            <div *ngFor="let skill of skill" class="col-sm-6 col-lg-4 col-xxl-3">
+                <div class="btn-right" *ngIf="isLogged">
+                    <button class="button-delete" type="button" (click)="delete(skill.id)"><i
+                            class="fas fa-trash icon-delete"></i></button>
+                    <button class="button-edit" type="button" routerLink="/editskill/{{skill.id}}"><i
+                            class="fas fa-pencil-alt icon-edit"></i></button>
+                </div>
+                <div id="container-{{skill.nombre}}" class="div-container">
+                    <circle-progress [percent]="skill.porcentaje" [outerStrokeColor]="skill.color"
+                        [titleColor]="skill.color" [unitsColor]="skill.color" [radius]="60" [space]="-10"
+                        [outerStrokeWidth]="10" [innerStrokeColor]="'#c0c7b8'" [innerStrokeWidth]="10"
+                        [animationDuration]="1000" [showSubtitle]="false"></circle-progress>
+                </div>
+                <p class="fs-4 fw-semibold text-center text-white">{{skill.nombre}}</p>
+            </div>
+        </div>
+    </div>
+</section>
